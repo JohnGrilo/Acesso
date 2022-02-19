@@ -11,16 +11,16 @@ public class Banco {
 		Locale.setDefault(Locale.US);
 		try (Scanner scanner = new Scanner(System.in)) {
 			String nome;
-			System.out.println("Digite seu nome: ");
+			System.out.print("Digite seu nome: ");
 			nome = scanner.next();
 			
 			System.out.println("Olá " + nome);
 			System.out.println("Senha Bem Vindo(a) ao teste de sistema!");
 			
-			System.out.println("Agora defina uma senha: ");
+			System.out.print("Agora defina uma senha: ");
 			int senha = scanner.nextInt();
 			
-			System.out.println("Confirme sua senha");
+			System.out.print("Confirme sua senha: ");
 			int confirmacao;
 			confirmacao = scanner.nextInt();
 			
@@ -30,7 +30,7 @@ public class Banco {
 			}
 			
 			System.out.println("Senha Criada om sucesso.");
-			System.out.println("Para Acessar o sistema digite sua senha");
+			System.out.print("Para Acessar o sistema digite sua senha: ");
 			int escolha;
 			escolha = scanner.nextInt();
 											
